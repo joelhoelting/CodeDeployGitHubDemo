@@ -3,12 +3,12 @@ os: linux
 files:
   - source: /index.html
     destination: /home/ubuntu/Dev
-hooks:
-  BeforeInstall:
-    - location: scripts/install_dependencies
-      timeout: 300
-    - location: scripts/start_server
-      timeout: 300
-  ApplicationStop:
-    - location: scripts/stop_server
-      timeout: 300
+# hooks:
+#   BeforeInstall:
+#     - location: scripts/install_dependencies
+#       timeout: 300
+#     - location: scripts/start_server
+#       timeout: 300
+#   ApplicationStop:
+#     - location: scripts/stop_server
+#       timeout: 300
